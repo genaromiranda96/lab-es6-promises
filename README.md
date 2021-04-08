@@ -59,7 +59,8 @@ addFood(steak[0], '#steak', () => {
 Using promises and the `then` statement print the directions to make Mash Potatoes in the correct order.
 
 ```javascript
-addFood(mashPotatoes[0], '#mashPotatoes').then(res => {
+addFood(mashPotatoes[0], '#mashPotatoes')
+
   // ... your code here
 });
 ```
