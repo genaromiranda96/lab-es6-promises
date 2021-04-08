@@ -6,13 +6,27 @@ for (let i = 0; i < mashPotatoes.length; i++) {
   console.log(mashPotatoes[i])
 }
 
+let img = document.querySelector('#table')
+
 // Iteration 1 using callbacks
 addFood(steak[0], '#steak', () => {
   // ... your code here
   addFood(steak[1], '#steak', () => {
-
-  })
+      addFood(steak[2], '#steak', () => {
+          addFood(steak[3], '#steak', () => {
+              addFood(steak[4], '#steak', () => {
+                  addFood(steak[5], '#steak', () => {
+                      addFood(steak[6], '#steak', () => {
+                          addFood(steak[7], '#steak')
+                            img.innerHTML += `<img src = "./public/images/steak.jpg"/>`
+                          })
+                      })
+                  })
+              })
+          })
+      })
 });
+
 
 
 
